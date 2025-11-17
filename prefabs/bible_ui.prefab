@@ -445,7 +445,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: https://snotbane.carrd.co/
+  m_Text: https://snotbane.itch.io/
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -2047,7 +2047,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8161160625837215240}
   listener_components:
   - {fileID: 7512613401740816211}
-  - {fileID: 0}
+  - {fileID: 3839920555381700633}
   - {fileID: 60463583751766009}
 --- !u!114 &8161160625837215240
 MonoBehaviour:
@@ -3291,6 +3291,12 @@ PrefabInstance:
       objectReference: {fileID: 7517004354047287435}
     - target: {fileID: 2799963784602502381, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
+      propertyPath: reader_font_prefab
+      value: 
+      objectReference: {fileID: 8405943301455489266, guid: 66c7704e4e9dbb94a8f39a786579bed4,
+        type: 3}
+    - target: {fileID: 2799963784602502381, guid: ba278d0a358e06e4ebb45c9cea0a0743,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 2799963784602502381, guid: ba278d0a358e06e4ebb45c9cea0a0743,
@@ -3318,6 +3324,12 @@ PrefabInstance:
       objectReference: {fileID: 7517004354047287435}
     - target: {fileID: 3964822410642291631, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
+      propertyPath: reader_font_prefab
+      value: 
+      objectReference: {fileID: 8405943301455489266, guid: 66c7704e4e9dbb94a8f39a786579bed4,
+        type: 3}
+    - target: {fileID: 3964822410642291631, guid: ba278d0a358e06e4ebb45c9cea0a0743,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3964822410642291631, guid: ba278d0a358e06e4ebb45c9cea0a0743,
@@ -3325,7 +3337,7 @@ PrefabInstance:
     - target: {fileID: 3964822410642291631, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
       propertyPath: serializationData.SerializedFormat
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4114611282007625301, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
@@ -3391,6 +3403,12 @@ PrefabInstance:
       objectReference: {fileID: 7517004354047287435}
     - target: {fileID: 5252892433438159286, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
+      propertyPath: reader_font_prefab
+      value: 
+      objectReference: {fileID: 8405943301455489266, guid: 66c7704e4e9dbb94a8f39a786579bed4,
+        type: 3}
+    - target: {fileID: 5252892433438159286, guid: ba278d0a358e06e4ebb45c9cea0a0743,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 5252892433438159286, guid: ba278d0a358e06e4ebb45c9cea0a0743,
@@ -3398,7 +3416,7 @@ PrefabInstance:
     - target: {fileID: 5252892433438159286, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
       propertyPath: serializationData.SerializedFormat
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6793537978041411508, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
@@ -3447,6 +3465,12 @@ PrefabInstance:
       objectReference: {fileID: 7517004354047287435}
     - target: {fileID: 7187201955737768869, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
+      propertyPath: reader_font_prefab
+      value: 
+      objectReference: {fileID: 8405943301455489266, guid: 66c7704e4e9dbb94a8f39a786579bed4,
+        type: 3}
+    - target: {fileID: 7187201955737768869, guid: ba278d0a358e06e4ebb45c9cea0a0743,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7187201955737768869, guid: ba278d0a358e06e4ebb45c9cea0a0743,
@@ -3454,7 +3478,7 @@ PrefabInstance:
     - target: {fileID: 7187201955737768869, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
       propertyPath: serializationData.SerializedFormat
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7771480866378391165, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
@@ -3499,6 +3523,12 @@ PrefabInstance:
       objectReference: {fileID: 7517004354047287435}
     - target: {fileID: 8488025631857248661, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
+      propertyPath: reader_font_prefab
+      value: 
+      objectReference: {fileID: 8405943301455489266, guid: 66c7704e4e9dbb94a8f39a786579bed4,
+        type: 3}
+    - target: {fileID: 8488025631857248661, guid: ba278d0a358e06e4ebb45c9cea0a0743,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8488025631857248661, guid: ba278d0a358e06e4ebb45c9cea0a0743,
@@ -3506,7 +3536,7 @@ PrefabInstance:
     - target: {fileID: 8488025631857248661, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
       propertyPath: serializationData.SerializedFormat
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8653619558990706084, guid: ba278d0a358e06e4ebb45c9cea0a0743,
         type: 3}
@@ -6181,7 +6211,7 @@ PrefabInstance:
     - target: {fileID: 1097969283530269693, guid: d8ceed1e9206de64383bef17fc797421,
         type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0.999998
       objectReference: {fileID: 0}
     - target: {fileID: 2759413387439865415, guid: d8ceed1e9206de64383bef17fc797421,
         type: 3}

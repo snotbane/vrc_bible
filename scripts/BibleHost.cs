@@ -109,6 +109,7 @@ public class BibleHost : UdonSharpBehaviour
 
 	void Start()
 	{
+// This precomp directive reduces load times when playing in editor. To test the Bible in editor, select a translation before clicking any other buttons.
 #if !UNITY_EDITOR
 		trans_default.UpdateHost();
 #endif
@@ -132,15 +133,18 @@ public class BibleHost : UdonSharpBehaviour
 
 		translation_text = content_file.text;
 
-		/** Set the number of all books in the translation.
+		/** Set the number of all books in the translation. Only count the header section.
 		*/
-		max_book_count = 0;
+		max_book_count = -1;
 		var cursor = 0;
-		while (translation_text[cursor] != SEP)
+		while (translation_text[cursor] != '0')
 		{
 			cursor = BibleUtils.NthIndexOf(translation_text, SEP, 0, cursor);
 			max_book_count += 1;
+			Debug.Log($"{max_book_count}: '{translation_text[cursor]}'");
+			Debug.Log($"{translation_text[cursor] != '0'}");
 		}
+
 
 		book_names = new string[max_book_count];
 		book_names_short = new string[max_book_count];
@@ -176,7 +180,7 @@ public class BibleHost : UdonSharpBehaviour
 		chapter_lengths = new int[max_chapter_count];
 		chapter_heads = new int[max_chapter_count];
 
-		translation_text = translation_text.Substring(cursor + 1);
+		translation_text = translation_text.Substring(cursor);
 
 		/**	Set indeces for each chapter.
 		*/
@@ -197,7 +201,7 @@ public class BibleHost : UdonSharpBehaviour
 			chapter_books[i] = b;
 			chapter_locals[i] = l;
 			chapter_lengths[i] = j;
-			chapter_heads[i] = h;
+			chapter_heads[i] = h + LUT_REF_PREFIX_LENGTH;
 
 			// Debug.Log($"[{i}] book={b}, local={l}, length={j}, head={h}, head_address={head_address}, text={CreateChapterText(i)}");
 
@@ -232,9 +236,9 @@ public class BibleHost : UdonSharpBehaviour
 		var char_head = chapter_heads[chapter];
 		for (var i = 0; i < chapter_lengths[chapter]; i++)
 		{
-			var char_end = translation_text.IndexOf(SEP, char_head);
-			result += $"{GetRichVerseNumber(i)}{translation_text.Substring(char_head + LUT_REF_PREFIX_LENGTH, char_end - (char_head + LUT_REF_PREFIX_LENGTH))} ";
-			char_head = char_end + 1;
+			var char_end = translation_text.IndexOf(SEP, char_head) - 1;
+			result += $"{GetRichVerseNumber(i)}{translation_text.Substring(char_head, char_end - char_head)} ";
+			char_head = char_end + LUT_REF_PREFIX_LENGTH + 2;
 		}
 
 		return result;

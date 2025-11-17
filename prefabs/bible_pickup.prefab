@@ -1274,6 +1274,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7051068749490841192, guid: 99320beb0d8d89e478d0d9742acf91b5,
         type: 3}
+    - target: {fileID: 7124838085808140702, guid: 99320beb0d8d89e478d0d9742acf91b5,
+        type: 3}
+      propertyPath: m_text
+      value: "https://snotbane.itch.io/\u200B"
+      objectReference: {fileID: 0}
     - target: {fileID: 7192749928927047027, guid: 99320beb0d8d89e478d0d9742acf91b5,
         type: 3}
       propertyPath: claimed_message
