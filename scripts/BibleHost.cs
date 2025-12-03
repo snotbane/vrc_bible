@@ -141,8 +141,8 @@ public class BibleHost : UdonSharpBehaviour
 		{
 			cursor = BibleUtils.NthIndexOf(translation_text, SEP, 0, cursor);
 			max_book_count += 1;
-			Debug.Log($"{max_book_count}: '{translation_text[cursor]}'");
-			Debug.Log($"{translation_text[cursor] != '0'}");
+			// Debug.Log($"{max_book_count}: '{translation_text[cursor]}'");
+			// Debug.Log($"{translation_text[cursor] != '0'}");
 		}
 
 

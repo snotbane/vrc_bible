@@ -44,7 +44,7 @@ Each translation comes as a single `.txt` file with two sections: a <b>HEADER</b
 
 First of all, the file must be in LF, UTF-8 format. It can be located anywhere in the project.
 
-The Header section contains the names of each book as well as the number of chapters in each book. Each line represents one book, in the format `<BOOK_NAME>,<CHAPTER_COUNT>` , e.g. `GENESIS,50` . An empty line marks the end of the Header section.
+The Header section contains the names of each book as well as the number of chapters in each book. Each line represents one book, in the format `<BOOK_NAME>,<BOOK_ABBREVIATION>,<CHAPTER_COUNT>` , e.g. `Genesis,GEN,50` . An empty line marks the end of the Header section.
 
 The Content section contains the content of the translation. Each line represents one verse, in the format `<VERSE_ADDRESS> <VERSE_CONTENT>` where `VERSE_ADDRESS` is a string of nine digits denoting the book, chapter, and verse numbers, and `VERSE_CONTENT` is the text itself. The verse content may contain formatting tokens that TextMeshPro can parse, such as `<i>` or `<b>`.
 An empty string of zeroes `000000000` marks the end of the Content section. This must be the last line in the file.
